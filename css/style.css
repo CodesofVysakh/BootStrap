@@ -13,14 +13,21 @@ body {
     font-family: "poppinsregular", sans-serif;
     color: #222;
 }
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
 .navbar {
-    padding: 0.8rem;
+    padding: 0 0.8rem;
 }
 .navbar-nav li {
     padding-right: 20px;
 }
 .nav-link {
     font-size: 1.1em !important;
+}
+.carousel-inner {
+    transition: 1s ease;
 }
 .carousel-inner img {
     width: 100%;
@@ -46,6 +53,10 @@ body {
     border: 1px solid #ffffff;
     color: #ffffff;
 
+}
+.btn-2{
+    border: 1px solid #8d8d8d;
+    color: #8d8d8d;
 }
 .btn-primary {
     background-color: #6648b1;
@@ -98,6 +109,7 @@ body {
 .social a {
     font-size: 4.5em;
     padding: 3rem;
+    display: inline-block;
 }
 .fa-facebook {
     color: #3b5998;
@@ -133,6 +145,7 @@ hr.light {
     margin-bottom: 1rem;
 }
 footer a {
+    display: inline-block;
     color: #d5d5d5;
 }
 hr.light-100 {
@@ -141,14 +154,41 @@ hr.light-100 {
     margin-top: 0.8rem;
     margin-bottom: 1rem;
 }
+header div.right{
+    width: 40%;
+}
+header div.menu {
+    padding: 2px 12px;
+    border-radius: 2px;
+    color: #8d8d8d;
+    display: none;
+}
+header div.mobile-menu {
+    /* display: none; */
+    position: absolute;
+    top: 80px;
+    left: 0;
+    
+}
+#threecs section.container div.top hr { 
+    border-top: 2px solid #000;
+}
+.carousel-inner.active {
+    margin-top: 150px;
+    transition: 1s ease;
+}
+
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media all and (max-width: 992px) {
     .social a {
         font-size: 4rem;
         padding: 2rem;
     }
+    header div.right{
+        width: 50%;
+    }
 }
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
     .carousel-caption {
         top: 45%;
     }
@@ -160,7 +200,7 @@ hr.light-100 {
         font-weight: 400;
         padding-bottom: 0.2rem;
     }
-    .carousel-caption btn {
+    .carousel-caption .btn {
         font-size: 95%;
         padding: 8px 14px;
     }
@@ -171,8 +211,14 @@ hr.light-100 {
         font-size: 2.5rem;
         padding: 1.2rem;
     }
+    header div.menu {
+        display: block;
+    }
+    header div.right{
+       display: none;
+    }
 }
-@media (max-width: 576px) {
+@media all and (max-width: 576px) {
     .carousel-caption {
         top: 40%;
     }
@@ -182,7 +228,7 @@ hr.light-100 {
     .carousel-caption h3 {
         font-size: 110%;
     }
-    .carousel-caption btn {
+    .carousel-caption .btn {
         font-size: 90%;
         padding: 4px 8px;
     }
@@ -195,6 +241,21 @@ hr.light-100 {
     .social a {
         font-size: 2em;
         padding: 0.7rem;
+    }
+}
+@media all and (max-width: 400px) {
+    .carousel-caption {
+        top: 30%;
+    }
+    .carousel-caption h1 {
+        font-size: 200%;
+    }
+    .carousel-caption h3 {
+        font-size: 80%;
+    }
+    .carousel-caption .btn {
+        font-size: 70%;
+        padding: 2px 6px;
     }
 }
 
@@ -228,10 +289,3 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
-header div.right{
-    width: 40%;
-}
-
-#threecs section.container div.top hr { 
-    border-top: 2px solid #000;
-}

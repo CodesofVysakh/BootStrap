@@ -6,20 +6,32 @@
         <title>Complete Bootstrap 4 Website Layout</title>
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon" />
+        <link href="css/style.css" rel="stylesheet" />
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/all.js"></script>
         <script src="js/app.js"></script>
-        <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation -->
-        <header class="p-3">
-            <section class="navbar d-flex justify-content-space-between align-items-center collapse navbar-collapse">
+        <header class="px-3 pt-3">
+            <section class="wrapper navbar d-flex flex-wrap justify-content-space-between align-items-center collapse navbar-collapse">
                 <h1><a href="#"><img src="images/logo.png" alt="Logo" /></a></h1>
                 <div class="right">
-                    <ul class="list-unstyled d-flex justify-content-between align-items-center w-100% ">
+                    <ul class="list-unstyled d-flex justify-content-between align-items-center align-content-center w-100% mb-0">
+                        <li class="mr-3"><a class="text-muted" href="#">Home</a></li>
+                        <li class="mr-3"><a class="text-muted" href="#">About</a></li>
+                        <li class="mr-3"><a class="text-muted" href="#">Services</a></li>
+                        <li class="mr-3"><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Connect</a></li>
+                    </ul>
+                </div>
+                <div class="menu border focus-border-warning flex-shrink">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="mobile-menu">
+                    <ul class="list-unstyled w-100% mb-0">
                         <li class="mr-3"><a class="text-muted" href="#">Home</a></li>
                         <li class="mr-3"><a class="text-muted" href="#">About</a></li>
                         <li class="mr-3"><a class="text-muted" href="#">Services</a></li>
@@ -58,28 +70,28 @@
 
         <!--- Three Column Section -->
         <section id="threecs jumbotron jumbotron-fluid">
-            <section class="container">
+            <section class="wrapper container">
                 <div class="top text-center">
                     <h4 class="m-3 display-4">Build with ease.</h4>
                     <hr class="light">
                     <p>Welcome to my Bootstrap 4 website tutorial! Bootstrap is a free and open-source front-end library with HTML and CSS based designs </p>
                 </div>
-                <div class="bottom d-flex justify-content-between">
-                    <div class="item text-center">
+                <div class="bottom row">
+                    <div class="item col-sm col-md text-center">
                         <span class="icon ">
                             <i class="fas fa-code"></i>
                         </span>
                         <h6 class="lead">HTML5</h6>
                         <small>Built with the latest version of HTML, HTML5</small>
                     </div>
-                    <div class="item text-center">
+                    <div class="item col-sm col-md text-center">
                         <span class="icon">
                             <i class="fas fa-bold"></i>
                         </span>
                         <h6 class="lead">BOOTSTRAP</h6>
                         <small>Built with the latest version of Bootstrap, Bootstrap 4</small>
                     </div>
-                    <div class="item text-center">
+                    <div class="item col-sm col-md text-center">
                         <span class="icon">
                             <i class="fab fa-css3"></i>
                         </span>
@@ -93,15 +105,15 @@
 
         <!--- Two Column Section -->
         <section id="twocs" class="pt-5">
-            <section class="mx-auto d-flex justify-content-between ">
-                <div class="mx-3 left w-50">
+            <section class="wrapper mx-auto row">
+                <div class="mx-3 col-md mb-5">
                     <h5 class="h3">If you build it...</h5>
                     <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
                     <p>Resize the browser window to see the effect.Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
                     <p>It can also display the web page differently depending on the screen size or viewing device.</p>
                     <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
-                <div class="right mx-3 mb-5 w-50 ">
+                <div class="right mx-3 mb-5 col-md ">
                     <img class="img-fluid" src="images/desk.png" alt="Image" />
                 </div>
             </section>
@@ -110,40 +122,40 @@
 
         <!--- Meet the team -->
         <section id="team">
-            <section class="container">
+            <section class="wrapper ">
                 <div class="top text-center pt-5 pb-3 ">
                     <h4 class="display-4">Meet the Team</h4>
                 </div>
                 <hr class="light mb-5 mx-auto">
-                <div class="bottom d-flex justify-content-between align-items-center">
-                    <div class="item">
+                <div class="bottom pb-0 pb-sm-5 row mr-0 mx-auto">
+                    <div class="item col-md col-lg border m-3 m-sm-0 mr-sm-3 fluid">
                         <div class="above">
                             <img class="img-fluid" src="images/team1.png" alt="Profile-Image" />
                         </div>
-                        <div class="below">
-                            <h6>John Doe</h6>
+                        <div class="below p-3">
+                            <h6 class="h4 pl-3">John Doe</h6>
                             <p>John is an Internet enterpreneur with almost 20 years of experience.</p>
-                            <a href="#" class="button">See Profile</a>
+                            <a href="#" class="btn btn-2">See Profile</a>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item col-md col-lg border m-3 m-sm-0 mr-sm-3 fluid">
                         <div class="above">
                             <img class="img-fluid" src="images/team2.png" alt="Profile-Image" />
                         </div>
-                        <div class="below">
-                            <h6>Mary Jo</h6>
+                        <div class="below p-3">
+                            <h6 class="h4 pl-3">Mary Jo</h6>
                             <p>Mary is a designer with almost 10 years of digital design exoerience.</p>
-                            <a href="#" class="button">See Profile</a>
+                            <a href="#" class="btn btn-2">See Profile</a>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item col-md col-lg border m-3 m-sm-0 fluid">
                         <div class="above">
                             <img class="img-fluid" src="images/team3.png" alt="Profile-Image" />
                         </div>
-                        <div class="below">
-                            <h6>Phil Ho</h6>
+                        <div class="below p-3">
+                            <h6 class="h4 pl-3">Phil Ho</h6>
                             <p>Phil is as developer with over 5 years od web development experience.</p>
-                            <a href="#" class="button">See Profile</a>
+                            <a href="#" class="btn btn-2">See Profile</a>
                         </div>
                     </div>
                 </div>
@@ -151,37 +163,42 @@
         </section><!--( #team )-->
 
         <!--- Two Column Section -->
-        <section id="philosophy">
-            <section class="container">
-                <div class="left">
-                    <h5>Our Philosophy</h5>
+        <section id="philosophy" class="pt-5">
+            <section class="wrapper mx-auto row">
+                <div class="left mx-3 col-md">
+                    <h5 class="h3">Our Philosophy</h5>
                     <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
                     <p>Resize the browser window to see the effect.Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
                 </div>
-                <div class="right">
-                    <img src="images/background4.jpg" alt="Image-Background" />
+                <div class="right mx-3 mb-5 col-md">
+                    <img src="images/background4.jpg" class="img-fluid" alt="Image-Background" />
                 </div>
             </section>
+            <hr class="light-100">
         </section><!--( #philosophy )-->
 
         <!--- Connect -->
         <section id="connect">
-            <section class="container">
-                <div class="top">
-                    <h4>Connect</h4>
+            <section class="wrapper container">
+                <div class="top text-center">
+                    <h4 class="h2 mt-5">Connect</h4>
                 </div>
-                <div class="bottom">
-                    <span class="icon"></span>
-                    <span class="icon"></span>
-                    <span class="icon"></span>
-                    <span class="icon"></span>
+                <div class="social text-center">
+                    <a href="#" class="icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
                 </div>
             </section>
         </section><!--( #connect )-->
 
         <!--- Footer -->
         <footer>
-            &copy; bootstrap practice
+            <div class="foot wrapper text-center">
+                <a class="pb-4" href="#">
+                    &copy; bootstrap practice
+                </a>
+            </div>
         </footer>
     </body>
 </html>
