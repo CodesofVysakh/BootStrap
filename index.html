@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Complete Bootstrap 4 Website Layout</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/all.js"></script>
+        <script src="js/app.js"></script>
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <header class="p-3">
+            <section class="navbar d-flex justify-content-space-between align-items-center collapse navbar-collapse">
+                <h1><a href="#"><img src="images/logo.png" alt="Logo" /></a></h1>
+                <div class="right">
+                    <ul class="list-unstyled d-flex justify-content-between align-items-center w-100% ">
+                        <li class="mr-3"><a class="text-muted" href="#">Home</a></li>
+                        <li class="mr-3"><a class="text-muted" href="#">About</a></li>
+                        <li class="mr-3"><a class="text-muted" href="#">Services</a></li>
+                        <li class="mr-3"><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Connect</a></li>
+                    </ul>
+                </div>
+            </section>
+        </header>
+
+        <!--- Image Slider -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/background1.jpg" alt="First slide" />
+                <span class="carousel-caption welcome">
+                    <h1 class="text-uppercase">bootstrap</h1>
+                    <h3 class="text-capitalize">Complete website Layout</h3>
+                    <a href="#" class="btn text-uppercase">VIEW DEMO</a>
+                    <a href="#" class="btn btn-primary text-capitalize">Get Started</a>
+                </span>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/background2.jpg" alt="Second slide" />
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/background3.jpg" alt="Third slide" />
+              </div>
+            </div>
+        </div>
+
+        <!--- Three Column Section -->
+        <section id="threecs jumbotron jumbotron-fluid">
+            <section class="container">
+                <div class="top text-center">
+                    <h4 class="m-3 display-4">Build with ease.</h4>
+                    <hr class="light">
+                    <p>Welcome to my Bootstrap 4 website tutorial! Bootstrap is a free and open-source front-end library with HTML and CSS based designs </p>
+                </div>
+                <div class="bottom d-flex justify-content-between">
+                    <div class="item text-center">
+                        <span class="icon ">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <h6 class="lead">HTML5</h6>
+                        <small>Built with the latest version of HTML, HTML5</small>
+                    </div>
+                    <div class="item text-center">
+                        <span class="icon">
+                            <i class="fas fa-bold"></i>
+                        </span>
+                        <h6 class="lead">BOOTSTRAP</h6>
+                        <small>Built with the latest version of Bootstrap, Bootstrap 4</small>
+                    </div>
+                    <div class="item text-center">
+                        <span class="icon">
+                            <i class="fab fa-css3"></i>
+                        </span>
+                        <h6 class="lead">CSS3</h6>
+                        <small>Built with the latest version of CSS, CSS3</small>
+                    </div>
+                </div>
+            </section>
+            <hr class="light-100">
+        </section><!--( #threecs)-->
+
+        <!--- Two Column Section -->
+        <section id="twocs" class="pt-5">
+            <section class="mx-auto d-flex justify-content-between ">
+                <div class="mx-3 left w-50">
+                    <h5 class="h3">If you build it...</h5>
+                    <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+                    <p>Resize the browser window to see the effect.Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
+                    <p>It can also display the web page differently depending on the screen size or viewing device.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="right mx-3 mb-5 w-50 ">
+                    <img class="img-fluid" src="images/desk.png" alt="Image" />
+                </div>
+            </section>
+            <hr class="light-100">
+        </section><!--( #twocs )-->
+
+        <!--- Meet the team -->
+        <section id="team">
+            <section class="container">
+                <div class="top text-center pt-5 pb-3 ">
+                    <h4 class="display-4">Meet the Team</h4>
+                </div>
+                <hr class="light mb-5 mx-auto">
+                <div class="bottom d-flex justify-content-between align-items-center">
+                    <div class="item">
+                        <div class="above">
+                            <img class="img-fluid" src="images/team1.png" alt="Profile-Image" />
+                        </div>
+                        <div class="below">
+                            <h6>John Doe</h6>
+                            <p>John is an Internet enterpreneur with almost 20 years of experience.</p>
+                            <a href="#" class="button">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="above">
+                            <img class="img-fluid" src="images/team2.png" alt="Profile-Image" />
+                        </div>
+                        <div class="below">
+                            <h6>Mary Jo</h6>
+                            <p>Mary is a designer with almost 10 years of digital design exoerience.</p>
+                            <a href="#" class="button">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="above">
+                            <img class="img-fluid" src="images/team3.png" alt="Profile-Image" />
+                        </div>
+                        <div class="below">
+                            <h6>Phil Ho</h6>
+                            <p>Phil is as developer with over 5 years od web development experience.</p>
+                            <a href="#" class="button">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section><!--( #team )-->
+
+        <!--- Two Column Section -->
+        <section id="philosophy">
+            <section class="container">
+                <div class="left">
+                    <h5>Our Philosophy</h5>
+                    <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+                    <p>Resize the browser window to see the effect.Responsive web design has become more important as the amount of mobile traffic now accounts for more than half of total internet traffic.</p>
+                </div>
+                <div class="right">
+                    <img src="images/background4.jpg" alt="Image-Background" />
+                </div>
+            </section>
+        </section><!--( #philosophy )-->
+
+        <!--- Connect -->
+        <section id="connect">
+            <section class="container">
+                <div class="top">
+                    <h4>Connect</h4>
+                </div>
+                <div class="bottom">
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                </div>
+            </section>
+        </section><!--( #connect )-->
+
+        <!--- Footer -->
+        <footer>
+            &copy; bootstrap practice
+        </footer>
+    </body>
+</html>
